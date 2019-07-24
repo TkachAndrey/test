@@ -20,7 +20,7 @@
 	            <?php endforeach; ?>
 	        </ul>
 		<?php endif; ?>
-	</section>
+	</section><!-- slider -->
 
 	<section class="advantages">
 		<div class="wrapper">
@@ -35,16 +35,16 @@
 			
 			<?php if( have_rows('advantages_items') ): ?>
 				<div class="advantages__block">
-					<?php while( have_rows('repeater_field_name') ): the_row(); ?>
+					<?php while( have_rows('advantages_items') ): the_row(); ?>
 						<div class="advantages__items">
 							<div class="advantages__items_img1 advantages__items_img">
-								<?php get_sub_field('advantage_logo') ?>
+								<img src="<?php echo get_sub_field('advantage_logo')['url']; ?>" alt="<?php echo get_sub_field('advantage_logo')['alt']; ?> "/>
 							</div>
 							<h3 class="advantages__items_h3">
-								<?php get_sub_field('advantage_title'); ?>
+								<?php the_sub_field('advantage_title'); ?>
 							</h3>
 							<p class="advantages__items_p">
-								<?php get_sub_field('advantage_description'); ?>
+								<?php the_sub_field('advantage_description'); ?>
 							</p>
 						</div>
 					<?php endwhile; ?>
@@ -52,4 +52,6 @@
 			<?php endif; ?>
 		</div>
 	</section><!-- /.advantages -->
+
+
 <?php get_footer(); ?>
