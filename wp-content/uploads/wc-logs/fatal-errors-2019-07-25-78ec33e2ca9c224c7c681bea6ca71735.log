@@ -1,0 +1,60 @@
+2019-07-25T14:32:30+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 23
+
+2019-07-25T14:32:59+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 23
+
+2019-07-25T14:34:32+00:00 CRITICAL Uncaught Error: Call to undefined function dynamicnews_theme_options() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 7
+
+2019-07-25T14:34:38+00:00 CRITICAL Uncaught Error: Call to undefined function dynamicnews_theme_options() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 7
+
+2019-07-25T14:39:36+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_post_thumbnail() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 25
+
+2019-07-25T14:39:46+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_post_thumbnail() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 25
+
+2019-07-25T14:45:00+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_permalink() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template.php(724): require()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template.php(671): load_template('/Applications/M...', false)
+#2 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php(30): get_template_part('template-parts/...', '')
+#4 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php on line 3
+
+2019-07-25T14:45:17+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_permalink() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template.php(724): require()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template.php(671): load_template('/Applications/M...', false)
+#2 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php(30): get_template_part('template-parts/...', '')
+#4 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php on line 3
+

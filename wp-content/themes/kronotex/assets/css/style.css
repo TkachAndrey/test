@@ -246,7 +246,7 @@ a {
   justify-content: space-between;
 }
 
-.menu-item a {
+.menu__list .menu-item a {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
@@ -255,10 +255,10 @@ a {
   display: block;
 }
 
-.menu-item a:hover{
+.menu__list .menu-item a:hover{
   background-color: #ef5350;
 }
-.current-menu-item{
+.menu__list .current-menu-item{
    background-color: #ef5350;
 }
 .slider {
@@ -588,7 +588,7 @@ a {
 }
 
 .lastBlock__trippleBlock_2-p1 {
-  margin-bottom: 7.25rem;
+  margin-bottom: 8.75rem;
 }
 
 
@@ -736,28 +736,19 @@ a {
 
 .footer__content {
   display: flex;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
+  /*flex-wrap: wrap;*/
   justify-content: space-between;
+  flex: 1 1 auto;
 }
 
-.footer__content_col {
-  flex-basis: 17.1%;
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-right: 50px;
 }
 
-.footer__content_item:first-of-type {
-  margin-bottom: 2.1875rem;
-}
-
-.footer__content_item-p {
-  color: #b0bec5;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.25rem;
-}
-
-.footer__content_link {
+.footer__menu .menu-item a{
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -765,8 +756,11 @@ a {
   display: inline-block;
   letter-spacing: -0.9px;
 }
+.footer__menu .current-menu-item.menu-item a::after {
+  width: 100%;
+}
 
-.footer__content_link::after {
+.footer__menu .menu-item a::after {
   content: "";
   display: block;
   width: 1.4375rem;
@@ -777,7 +771,7 @@ a {
   transition: all 0.5s linear;
 }
 
-.footer__content_link:hover::after {
+.footer__menu .menu-item a:hover::after {
   transform: translateY(4px);
   width: 100%;
 }
@@ -799,12 +793,14 @@ a {
 
 .footer__content_btn {
   width: 100%;
+  text-align: center;
+  display: inline-block;
   padding: 1rem 1.25rem;
   background-color: #ef5d5a;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
-  font-weight: 400;
+  /*font-weight: 400;*/
   border: none;
   cursor: pointer;
   transition: all 0.5s linear;

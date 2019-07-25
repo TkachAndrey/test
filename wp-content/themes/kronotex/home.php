@@ -8,9 +8,10 @@
 
                 if ( is_home() && ! is_front_page() ) : 
         ?>
-                    <h1 class="onlineShop__title">
-                        <?php single_post_title(); ?>
-                    </h1>
+                    
+                        <h1 class="onlineShop__title">
+                            <?php single_post_title(); ?>
+                        </h1>
 
         <?php
                 endif;
@@ -26,7 +27,7 @@
                      * If you want to override this in a child theme, then include a file
                      * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                      */
-                    get_template_part( 'template-parts/content-post', get_post_format() );
+                    get_template_part( 'template-parts/content', 'post' );
 
                 endwhile;
 

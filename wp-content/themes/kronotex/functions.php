@@ -46,4 +46,9 @@
 		
 	// 'title-tag' - Используется вместо wp_title(). Если активировать эту опцию, то не нужно устанавливать метатег <title> ... wp_title(); ... </title> - он будет подключен автоматически через хук wp_head.
 
+
+	if( function_exists('acf_add_options_page') ) {
+		acf_add_options_page();
+	}
+
 	

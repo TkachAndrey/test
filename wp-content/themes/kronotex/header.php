@@ -24,7 +24,9 @@
 					<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.svg" alt="">
 				</a>
 				<!-- top__item_phone -->
-				<a href="tel:+38124580750" class="top__item_link top__item_phone">8 (812) 458-07-50</a>
+				<a href="tel:<?php the_field('phone_number', 'option'); ?>" class="top__item_link top__item_phone">
+					<?php the_field('phone_number', 'option'); ?>
+				</a>
 				<!-- top__item_input -->
 				<?php get_search_form('search-form','top'); ?>
 				<!-- top__item_logIn -->
