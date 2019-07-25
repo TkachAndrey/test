@@ -89,7 +89,7 @@
 				$categories_group4 = get_field('categories_group4');
 			if ($categories_group4): ?>
 				<a href="<?php echo $categories_group4['relational_link']; ?>" class="categories__grid_item categories__grid_shop">
-					<img src="<?php echo $categories_group4['required_image']['url']; ?>" alt="<?php echo $categories_group4['required_image']['alt']; ?> " class="categories__grid_img" />
+					<img src="<?php echo $categories_group4['required_image']['url']; ?>" alt="<?php echo $categories_group4['required_image']['alt']; ?>"  class="categories__grid_img" />
 					<h2 class="categories__grid_h2 categories__grid_h2-shop">
 						<?php echo $categories_group4['short_name']; ?>
 					</h2>
@@ -106,10 +106,14 @@
 						$plan = get_field('plan');
 						if ($plan): ?>
 							<h2 class="plan__text_h2">
-								<?php $plan['plan_title']; ?>
+								<?php echo $plan['plan_title']; ?>
 							</h2>
-							<p class="plan__text_p"><?php $plan['plan_description']; ?></p>
-							<a href="#!" class="plan__text_btn">Создать технический план</a>
+							<p class="plan__text_p">
+								<?php echo $plan['plan_description']; ?>
+							</p>
+							<a href="<?php echo $plan['create_plan_link']; ?> " class="plan__text_btn">
+								<?php echo $plan['create_plan_description']; ?>
+							</a>
 						<?php endif; ?>
 				</div>
 				<div class="plan__content_img">
@@ -120,6 +124,30 @@
 			</div>
 		</div>
 	</section><!-- /.plan -->
+
+	<section class="lastBlock">
+		<div class="wrapper">
+			<div class="lastBlock__trippleBlock">
+				<?php $bottomBlock = get_field('bottom_block');
+				if($bottomBlock): ?>
+					<div class="lastBlock__trippleBlock_1">
+						<img src="<?php echo $bottomBlock['left_image']['url']; ?>" alt="<?php echo $bottomBlock['left_image']['alt']; ?>"/>
+					</div>
+					<div class="lastBlock__trippleBlock_2">
+						<p class="lastBlock__trippleBlock_2-p lastBlock__trippleBlock_2-p1">
+							<?php echo $bottomBlock['left_field_description']; ?></p>
+						<p class="lastBlock__trippleBlock_2-p lastBlock__trippleBlock_2-p2">
+							<?php echo $bottomBlock['right_field_description']; ?></p>
+						<img src="<?php bloginfo('template_directory'); ?>/assets/img/arrow-left.png" alt="" class="lastBlock__trippleBlock_arrow lastBlock__trippleBlock_arrowLeft"/>
+						<img src="<?php bloginfo('template_directory'); ?>/assets/img/arrow-right.png" alt="" class="lastBlock__trippleBlock_arrow lastBlock__trippleBlock_arrowRight"/>
+					</div>
+					<div class="lastBlock__trippleBlock_3">
+						<img src="<?php echo $bottomBlock['right_image']['url']; ?>" alt="<?php echo $bottomBlock['left_image']['alt']; ?>"/>
+					</div>
+				<?php endif; ?>
+			</div><!-- /.lastBlock__trippleBlock -->
+		</div>
+	</section><!-- /.lastBlock -->
 
 
 <?php get_footer(); ?>

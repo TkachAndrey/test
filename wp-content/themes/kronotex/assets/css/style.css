@@ -539,21 +539,20 @@ a {
 .plan__text_p {
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.375rem;
+  line-height: 1.5;
   letter-spacing: 0.01875rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 3rem;
 }
 
 .plan__text_btn {
-  width: 17.25rem;
+  display: inline-block;
   background-color: #ef5d5a;
   padding: 1rem 1.25rem;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
-  font-weight: 400;
   border: none;
-  margin-bottom: 9.6875rem;
+  margin-bottom: 8.6875rem;
   cursor: pointer;
   transition: all 0.5s linear;
 }
@@ -570,17 +569,9 @@ a {
   margin-bottom: 4.875rem;
 }
 
-.lastBlock__trippleBlock_1 {
-  position: relative;
-}
-
-.lastBlock__trippleBlock_1-img {
-  position: absolute;
-  bottom: 2.625rem;
-  right: 0;
-}
 
 .lastBlock__trippleBlock_2 {
+  position: relative;
   width: 23.1875rem;
   height: 19.25rem;
   background-color: #37474f;
@@ -600,14 +591,17 @@ a {
   margin-bottom: 7.25rem;
 }
 
-.lastBlock__trippleBlock_3 {
-  position: relative;
-}
 
-.lastBlock__trippleBlock_3-img {
+.lastBlock__trippleBlock_arrow {
   position: absolute;
+}
+.lastBlock__trippleBlock_arrowLeft {
+  left: -31px;
+  bottom: 2.625rem;
+}
+.lastBlock__trippleBlock_arrowRight {
+  right: -31px;
   top: 2.25rem;
-  left: 0;
 }
 
 /*********** onlineShop *************/
