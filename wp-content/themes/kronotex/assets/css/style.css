@@ -361,21 +361,27 @@ a {
   margin: 0 auto;
   fill: #455a64;
   margin-bottom: 2.5rem;
+  width: 8.25rem;
+  height: 8.25rem;
 }
 
+.advantages__items_img img{
+  width: 100%;
+  height: 100%;
+}
 .advantages__items_img1 {
-  width: 8.125rem;
-  height: 8.25rem;
+  /*width: 8.125rem;*/
+  /*height: 8.25rem;*/
 }
 
 .advantages__items_img2 {
-  width: 4rem;
-  height: 8.25rem;
+  /*width: 4rem;*/
+  /*height: 8.25rem;*/
 }
 
 .advantages__items_img3 {
-  width: 8.25rem;
-  height: 8.25rem;
+  /*width: 8.25rem;*/
+  /*height: 8.25rem;*/
 }
 
 .advantages__items_h3 {
@@ -678,7 +684,6 @@ a {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
-  /*margin: 0;*/
   padding-top: 0;
 }
 .onlineShop__post_text h3{

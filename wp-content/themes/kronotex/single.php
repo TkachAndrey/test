@@ -6,7 +6,7 @@
 				while ( have_posts() ) : the_post();
 			?>
 				<h1 class="onlineShop__post_title">
-			<?php	
+			<?php
 				echo the_title();
 			?>
 				</h1>
@@ -16,7 +16,7 @@
 			?>
 				</div>
 			<?php
-				endwhile; 
+				endwhile;
 			?>
 		</div>
 	</section>

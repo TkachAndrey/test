@@ -54,6 +54,9 @@
 
 	// 'post-thumbnails' - Позволяет устанавливать миниатюру посту. Можно передать второй аргумент функции в виде массива, в котором указать для каких типов постов разрешить миниатюры: 'post-thumbnails', array( 'post', 'movie', 'page', ... )
 
+	add_filter( 'excerpt_length', function(){
+		return 15;
+	} );
 
 
 	if( function_exists('acf_add_options_page') ) {
