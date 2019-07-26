@@ -10,6 +10,7 @@
 			if ( have_posts() ) : 
 				while ( have_posts() ) : the_post();
 					the_content();
+					echo get_field('2gis');
 				endwhile; 
 			else: ?>
 				<p>Sorry, no posts matched your criteria.</p>

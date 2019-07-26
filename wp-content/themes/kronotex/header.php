@@ -14,7 +14,6 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-	 
 	<header class="top">
 		<div class="wrapper">
 			<div class="top__item flex">
@@ -30,10 +29,8 @@
 			</div>
 		</div>
 	</header>
-	
 	<section class="navi" id="navi">
 		<div class="wrapper">
-
 			<?php wp_nav_menu([
 				'theme_location'  => 'top',
 				'menu'            => 'ul',

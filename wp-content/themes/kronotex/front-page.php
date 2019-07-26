@@ -38,7 +38,9 @@
 					<?php while( have_rows('advantages_items') ): the_row(); ?>
 						<div class="advantages__items">
 							<div class="advantages__items_img1 advantages__items_img">
-								<img src="<?php echo get_sub_field('advantage_logo')['url']; ?>" alt="<?php echo get_sub_field('advantage_logo')['alt']; ?> "/>
+								<?php if ($logo = get_sub_field('advantage_logo')) : ?>
+								<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?> "/>
+							<?php endif; ?>
 							</div>
 							<h3 class="advantages__items_h3">
 								<?php the_sub_field('advantage_title'); ?>
@@ -102,19 +104,17 @@
 		<div class="wrapper">
 			<div class="plan__content">
 				<div class="plan__text">
-					<?php 
-						$plan = get_field('plan');
-						if ($plan): ?>
-							<h2 class="plan__text_h2">
-								<?php echo $plan['plan_title']; ?>
-							</h2>
-							<p class="plan__text_p">
-								<?php echo $plan['plan_description']; ?>
-							</p>
-							<a href="<?php echo $plan['create_plan_link']; ?> " class="plan__text_btn">
-								<?php echo $plan['create_plan_description']; ?>
-							</a>
-						<?php endif; ?>
+					<?php if ($plan = get_field('plan')): ?>
+						<h2 class="plan__text_h2">
+							<?php echo $plan['plan_title']; ?>
+						</h2>
+						<p class="plan__text_p">
+							<?php echo $plan['plan_description']; ?>
+						</p>
+						<a href="<?php echo $plan['create_plan_link']; ?> " class="plan__text_btn">
+							<?php echo $plan['create_plan_description']; ?>
+						</a>
+					<?php endif; ?>
 				</div>
 				<div class="plan__content_img">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/img/plan.svg" alt="">

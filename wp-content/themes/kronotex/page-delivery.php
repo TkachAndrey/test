@@ -10,6 +10,7 @@
 			if ( have_posts() ) : 
 				while ( have_posts() ) : the_post();
 					the_content();
+					the_field('video');
 				endwhile; 
 			else: ?>
 				<p>Sorry, no posts matched your criteria.</p>
