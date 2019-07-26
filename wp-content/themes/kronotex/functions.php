@@ -46,6 +46,15 @@
 		
 	// 'title-tag' - Используется вместо wp_title(). Если активировать эту опцию, то не нужно устанавливать метатег <title> ... wp_title(); ... </title> - он будет подключен автоматически через хук wp_head.
 
+	function adding_image_preview(){
+		add_theme_support('post-thumbnails', array('post', 'page') );
+	}
+
+	add_action('after_setup_theme', 'adding_image_preview');
+
+	// 'post-thumbnails' - Позволяет устанавливать миниатюру посту. Можно передать второй аргумент функции в виде массива, в котором указать для каких типов постов разрешить миниатюры: 'post-thumbnails', array( 'post', 'movie', 'page', ... )
+
+
 
 	if( function_exists('acf_add_options_page') ) {
 		acf_add_options_page();

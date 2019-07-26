@@ -58,3 +58,13 @@ Stack trace:
 #7 {main}
   thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php on line 3
 
+2019-07-25T17:37:56+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 36
+
+2019-07-25T17:39:15+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/home.php on line 24
+
+2019-07-25T17:46:40+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php on line 25
+
+2019-07-25T17:46:44+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php on line 25
+
+2019-07-25T17:48:07+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/template-parts/content-post.php on line 25
+

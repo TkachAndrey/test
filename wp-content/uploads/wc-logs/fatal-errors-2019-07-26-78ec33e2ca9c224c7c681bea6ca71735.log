@@ -1,0 +1,16 @@
+2019-07-26T07:26:28+00:00 CRITICAL Uncaught Error: Call to undefined function get_content() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/page-about.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/page-about.php on line 7
+
+2019-07-26T07:27:33+00:00 CRITICAL Uncaught Error: Call to undefined function get_content() in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/page-about.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp_kronotex/wp-includes/template-loader.php(78): include()
+#1 /Applications/MAMP/htdocs/wp_kronotex/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp_kronotex/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/wp_kronotex/wp-content/themes/kronotex/page-about.php on line 7
+

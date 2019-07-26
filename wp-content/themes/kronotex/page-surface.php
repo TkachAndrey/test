@@ -1,9 +1,19 @@
 <?php get_header(); ?>
 
-    <section id="onlineShop" class="onlineShop" role="main">
+    <section id="aboutUs" class="aboutUs" role="main">
         <div class="wrapper">
+				<h1 class="onlineShop__post_title">
+				<?php echo the_title();?>
+			</h1>
 			
-			<h2 class="test">test</h2>
+			<?php 
+			if ( have_posts() ) : 
+				while ( have_posts() ) : the_post();
+					the_content();
+				endwhile; 
+			else: ?>
+				<p>Sorry, no posts matched your criteria.</p>
+			<?php endif; ?>
 
         </div><!-- .wrapper -->
     </section><!-- .onlineShop -->
